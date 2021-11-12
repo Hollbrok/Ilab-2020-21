@@ -1,0 +1,84 @@
+digraph PL_TREE {
+node [color = Red, fontname = Courier, style = filled, shape=record, fillcolor = purple]
+edge [color = Blue, style=dashed]
+
+"00A1E670" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [y]} | PREV [00A1E470] }" , style = filled, fillcolor = lightgreen] 
+"00A1E470" -> "00A1E670" [label="Left", fontcolor=darkblue]
+
+"00A1E470" [label = "{<f0> TYPE = [ARITHMETIC Function] | VALUE = [print]}| {<f1> left| <here> prev| right} | {<f2> [00A1E670]| [00A1E4F0]| [00000000]}",style = filled, fillcolor = purple] 
+"00A1E4F0" -> "00A1E470" [label="Left", fontcolor=darkblue]
+
+"00A1E230" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [x]} | PREV [00A1E570] }" , style = filled, fillcolor = lightgreen] 
+"00A1E570" -> "00A1E230" [label="Left", fontcolor=darkblue]
+
+"00A1E5B0" [label = "{ {<f0> TYPE = [Number] | <here> VALUE = [1]} | PREV [00A1E570] }" , style = filled, fillcolor = lightgreen] 
+"00A1E570" -> "00A1E5B0" [label="Right", fontcolor=darkblue]
+
+"00A1E570" [label = "{<f0> TYPE = [Operator] | VALUE = [-]}| {<f1> left| <here> prev| right} | {<f2> [00A1E230]| [00A1E4B0]| [00A1E5B0]}",style = filled, fillcolor = purple] 
+"00A1E4B0" -> "00A1E570" [label="Left", fontcolor=darkblue]
+
+"00A1E330" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [x]} | PREV [00A1E1F0] }" , style = filled, fillcolor = lightgreen] 
+"00A1E1F0" -> "00A1E330" [label="Left", fontcolor=darkblue]
+
+"00A1E5F0" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [x]} | PREV [00A1E370] }" , style = filled, fillcolor = lightgreen] 
+"00A1E370" -> "00A1E5F0" [label="Left", fontcolor=darkblue]
+
+"00A1E030" [label = "{ {<f0> TYPE = [Number] | <here> VALUE = [1]} | PREV [00A1E370] }" , style = filled, fillcolor = lightgreen] 
+"00A1E370" -> "00A1E030" [label="Right", fontcolor=darkblue]
+
+"00A1E370" [label = "{<f0> TYPE = [Operator] | VALUE = [-]}| {<f1> left| <here> prev| right} | {<f2> [00A1E5F0]| [00A1E1F0]| [00A1E030]}",style = filled, fillcolor = purple] 
+"00A1E1F0" -> "00A1E370" [label="Right", fontcolor=darkblue]
+
+"00A1E1F0" [label = "{<f0> TYPE = [Operator] | VALUE = [=]}| {<f1> left| <here> prev| right} | {<f2> [00A1E330]| [00A1E070]| [00A1E370]}",style = filled, fillcolor = purple] 
+"00A1E070" -> "00A1E1F0" [label="Left", fontcolor=darkblue]
+
+"00A1E530" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [y]} | PREV [00A1E2F0] }" , style = filled, fillcolor = lightgreen] 
+"00A1E2F0" -> "00A1E530" [label="Left", fontcolor=darkblue]
+
+"00A1E1B0" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [y]} | PREV [00A1DFF0] }" , style = filled, fillcolor = lightgreen] 
+"00A1DFF0" -> "00A1E1B0" [label="Left", fontcolor=darkblue]
+
+"00A1E630" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [x]} | PREV [00A1DFF0] }" , style = filled, fillcolor = lightgreen] 
+"00A1DFF0" -> "00A1E630" [label="Right", fontcolor=darkblue]
+
+"00A1DFF0" [label = "{<f0> TYPE = [Operator] | VALUE = [*]}| {<f1> left| <here> prev| right} | {<f2> [00A1E1B0]| [00A1E2F0]| [00A1E630]}",style = filled, fillcolor = lightblue] 
+"00A1E2F0" -> "00A1DFF0" [label="Right", fontcolor=darkblue]
+
+"00A1E2F0" [label = "{<f0> TYPE = [Operator] | VALUE = [=]}| {<f1> left| <here> prev| right} | {<f2> [00A1E530]| [00A1E070]| [00A1DFF0]}",style = filled, fillcolor = purple] 
+"00A1E070" -> "00A1E2F0" [label="Right", fontcolor=darkblue]
+
+"00A1E070" [label = "{<f0> TYPE = [BINDER] | VALUE = [2]}| {<f1> left| <here> prev| right}| {<f2>  [00A1E1F0]| [00A1E4B0]| [00A1E2F0]}",style = filled, fillcolor = "#1F85DE"] 
+"00A1E4B0" -> "00A1E070" [label="Right", fontcolor=darkblue]
+
+"00A1E4B0" [label = "{<f0> TYPE = [LOGIC function] | VALUE = [while]}| {<f1> left| <here> prev| right} | {<f2> [00A1E570]| [00A1E4F0]| [00A1E070]}",style = filled, fillcolor = "#fd02f4"] 
+"00A1E4F0" -> "00A1E4B0" [label="Right", fontcolor=darkblue]
+
+"00A1E4F0" [label = "{<f0> TYPE = [BINDER] | VALUE = [2]}| {<f1> left| <here> prev| right}| {<f2>  [00A1E470]| [00A1E6F0]| [00A1E4B0]}",style = filled, fillcolor = "#1F85DE"] 
+"00A1E6F0" -> "00A1E4F0" [label="Left", fontcolor=darkblue]
+
+"00A1F9D8" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [y]} | PREV [00A1FA98] }" , style = filled, fillcolor = lightgreen] 
+"00A1FA98" -> "00A1F9D8" [label="Left", fontcolor=darkblue]
+
+"00A1FA18" [label = "{ {<f0> TYPE = [Number] | <here> VALUE = [1]} | PREV [00A1FA98] }" , style = filled, fillcolor = lightgreen] 
+"00A1FA98" -> "00A1FA18" [label="Right", fontcolor=darkblue]
+
+"00A1FA98" [label = "{<f0> TYPE = [Operator] | VALUE = [=]}| {<f1> left| <here> prev| right} | {<f2> [00A1F9D8]| [00A1E6F0]| [00A1FA18]}",style = filled, fillcolor = purple] 
+"00A1E6F0" -> "00A1FA98" [label="Right", fontcolor=darkblue]
+
+"00A1E6F0" [label = "{<f0> TYPE = [BINDER] | VALUE = [3]}| {<f1> left| <here> prev| right}| {<f2>  [00A1E4F0]| [00A1E730]| [00A1FA98]}",style = filled, fillcolor = "#1F85DE"] 
+"00A1E730" -> "00A1E6F0" [label="Left", fontcolor=darkblue]
+
+"00A1F8D8" [label = "{ {<f0> TYPE = [Variable] | <here> VALUE = [x]} | PREV [00A1F998] }" , style = filled, fillcolor = lightgreen] 
+"00A1F998" -> "00A1F8D8" [label="Left", fontcolor=darkblue]
+
+"00A1F918" [label = "{ {<f0> TYPE = [Number] | <here> VALUE = [3]} | PREV [00A1F998] }" , style = filled, fillcolor = lightgreen] 
+"00A1F998" -> "00A1F918" [label="Right", fontcolor=darkblue]
+
+"00A1F998" [label = "{<f0> TYPE = [Operator] | VALUE = [=]}| {<f1> left| <here> prev| right} | {<f2> [00A1F8D8]| [00A1E730]| [00A1F918]}",style = filled, fillcolor = purple] 
+"00A1E730" -> "00A1F998" [label="Right", fontcolor=darkblue]
+
+"00A1E730" [label = "{<f0> TYPE = [BINDER] | VALUE = [4]}| {<f1> left| <here> prev| right}| {<f2>  [00A1E6F0]| [00A1E3B0]| [00A1F998]}",style = filled, fillcolor = "#1F85DE"] 
+"00A1E3B0" -> "00A1E730" [label="Right", fontcolor=darkblue]
+
+"00A1E3B0" [label = "{<f0> TYPE = [MAIN function] | VALUE = [main]}| {<f1> left| right}| {<f2> [00000000] | [00A1E730]}",style = filled, fillcolor = red] 
+}
