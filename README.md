@@ -9,7 +9,7 @@ For more detail info about projects see the corresponding folders.
         - [X] [__Solve Square Equation__](https://github.com/Hollbrok/SolveSquare)
         - [X] [__Onegin__](https://github.com/Hollbrok/Onegin)
         - [X] [__Stack__](https://github.com/Hollbrok/STACK)
-            </details>
+        </details>
     - [X] __2 semestr__ <details><summary></summary>
         - [X] [__CPU__](https://github.com/Hollbrok/CPU_C_VERSION)
         - [X] [__Stack_cpp__](https://github.com/Hollbrok/Stack_cpp_version)
@@ -20,5 +20,5 @@ For more detail info about projects see the corresponding folders.
         - [X] [__RayCasting__](https://github.com/Hollbrok/Raytracing)
         - [X] [__Differentiator__](https://github.com/Hollbrok/Differentiator)
         - [X] [__Programming language__](https://github.com/Hollbrok/Prog-Lang)
-            </details>
         </details>
+    </details>
